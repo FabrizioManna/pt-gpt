@@ -1,10 +1,10 @@
 {
   "name": "pt-gpt",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Back-end con chat gpt che ci fa da personal trainer",
+  "author": "Fabrizio Manna",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "Apache",
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
@@ -21,12 +21,21 @@
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
+    "@nestjs/config": "^2.3.1",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
+    "@nestjs/swagger": "^6.3.0",
+    "@nestjs/terminus": "^9.2.2",
+    "@nestjs/typeorm": "^9.0.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.2.0",
+    "sqlite3": "^5.1.6",
+    "typeorm": "^0.3.15"
   },
   "devDependencies": {
+    "@compodoc/compodoc": "^1.1.19",
     "@nestjs/cli": "^9.0.0",
     "@nestjs/schematics": "^9.0.0",
     "@nestjs/testing": "^9.0.0",
