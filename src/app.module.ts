@@ -4,7 +4,7 @@ import { ConfigAppModule } from './config/app/config.module';
 import { SqliteModule } from './config/database/sqlite/sqlite.module';
 
 @Module({
-  imports: [ConfigAppModule, AuthenticationModule, SqliteModule],
+  imports: [ConfigAppModule, SqliteModule, AuthenticationModule],
   controllers: [],
   providers: [],
 })
