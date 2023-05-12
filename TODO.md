@@ -4,7 +4,10 @@
 ## Autenticazione:
 1. [ ] Sistema di autenticazione 
 	1. [ ] Chiave JWT
-3. [ ] Gestione utenti
+	2. [ ] Validazione JWT
+	3. [ ] Creazione JWT
+
+2. [ ] Gestione utenti
 	1. Amministratore
 	2. Istruttore
 	3. Utente
