@@ -31,3 +31,7 @@
 7. [ ] Gestione attrezzature (equipment_catalog):
 	1. [ ] Lettura di tutte le attrezzature
 	2. [ ] Lettura attrezzature con filtro
+
+## Chat GPT
+8. [ ] Gestione Scheda con ChstGPT:
+	1. [ ] Genera scheda con ChatGPT 4.0
