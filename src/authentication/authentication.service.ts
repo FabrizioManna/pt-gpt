@@ -22,7 +22,7 @@ export class AuthenticationService {
       sex,
       numberPhone,
       height,
-      weight,
+      weight
     } = signUp;
 
     const user = new User();
@@ -40,6 +40,7 @@ export class AuthenticationService {
     user.numberPhone = numberPhone || null;
     user.height = height || null;
     user.weight = weight || null;
+    user.level = "US";
     user.createdAt = new Date();
     user.updatedAt = new Date();
 

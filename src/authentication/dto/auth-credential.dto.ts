@@ -85,8 +85,8 @@ export class SignUpDto {
   @IsString()
   @IsOptional()
   @ApiProperty({
-    example: 'usersname',
-    description: 'Username User',
+    example: 'numberphone',
+    description: 'NUmbephone User',
     required: false,
     type: 'string',
   })

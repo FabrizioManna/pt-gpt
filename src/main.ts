@@ -5,6 +5,7 @@ import { ValidationPipe, VersioningType, VERSION_NEUTRAL } from '@nestjs/common'
 async function bootstrap() {
 
   const app = await NestFactory.create(AppModule);
+  const PORT = process.env.PORT ?? 3000;
 
   const config = new DocumentBuilder()
     .setTitle("Rest API PT-GPT")
@@ -17,11 +18,6 @@ async function bootstrap() {
 
   app.useGlobalPipes(new ValidationPipe({ whitelist: true }));
 
-  app.enableVersioning({
-    type: VersioningType.URI,
-    defaultVersion: [VERSION_NEUTRAL, 'v1', 'v2']
-  });
-
-  await app.listen(3000);
+  await app.listen(PORT);
 }
 bootstrap();

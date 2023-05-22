@@ -18,8 +18,7 @@ import { User } from './entity/user.entity';
 
 @ApiTags('authentication')
 @Controller({
-  path: 'authentication',
-  version: ['v1'],
+  path: 'authentication'
 })
 export class AuthenticationController {
   constructor(private readonly authServices: AuthenticationService) {}

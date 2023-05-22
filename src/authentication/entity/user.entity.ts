@@ -50,6 +50,9 @@ export class User {
   @Column({ nullable: true })
   weight: string;
 
+  @Column({ length: 2, default: 'US' })
+  level: string;
+
   @Column({ type: 'integer', nullable: true })
   createdAt: Date;
 
